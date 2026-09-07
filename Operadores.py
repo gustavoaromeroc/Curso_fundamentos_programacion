@@ -61,3 +61,44 @@ print(f"XOR: 10 ^ 3 = {10 ^ 3}") # '1001' compara los binarios de los numerosy s
 print(f"NOT: ~10 = {~10}") # niega cada uno de los bit del numero donde pasamos de 00001010 a 11110101 recordando que la linea es de 8 bit
 print(f"Desplazamiento a la derecha: 10 >> 2 ={10 >> 2}") # pasamos de 1010 a 0101 luego 0010
 print(f"Desplazamiento a la izquierda: 10 << 2 ={10 << 2}") # pasamo de 1010 a 101000
+
+"""
+Estructuras de control
+"""
+# Condicionales
+
+My_string = "Gustavo"
+
+if My_string == "MoureDev":
+    print("my_string es 'MoureDev'")
+elif My_string == "Brais":
+    print("my_strin no es 'Brais'")
+else:
+    print("my_string no es 'MoureDev' ni 'Brais'")
+
+# Iterativas
+
+for i in range(11):
+    print(i)
+
+i = 0
+
+while i <= 10:
+    print(i)
+    i += 1
+
+# Manejo de Excepciones 
+try:
+    print(10 / 1)
+except:
+    print("Se ha producido un error")
+finally:
+    print("Ha finalizado el manejo de Excepciones")
+    
+"""
+Extra
+"""
+
+for number in range(10, 56):
+    if number % 2 == 0 and number != 16 and number % 3 != 0:
+        print(number)
